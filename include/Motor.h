@@ -2,11 +2,18 @@
 
 #include <stdint.h>
 
-class Motor{
+class Motor
+{
 public:
-    void setSpeed(int8_t speed);
-    int8_t getSpeed();
+    Motor(uint8_t pin, uint8_t pwmChannel);
+    ~Motor();
+
+    void setSpeed(float speed);
+    float getSpeed();
     void stop();
+
 private:
     char controlPin;
+    char pwmChannel;
+    float speed;
 };
