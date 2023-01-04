@@ -10,6 +10,7 @@
             "includePath": [
                 "c:/Users/Stray-Laptop/Desktop/DonkeyBot/include",
                 "c:/Users/Stray-Laptop/Desktop/DonkeyBot/src",
+                "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_update",
@@ -97,7 +98,6 @@
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                 "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
@@ -108,6 +108,7 @@
                 "path": [
                     "c:/Users/Stray-Laptop/Desktop/DonkeyBot/include",
                     "c:/Users/Stray-Laptop/Desktop/DonkeyBot/src",
+                    "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_update",
@@ -195,7 +196,6 @@
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                    "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                     "C:/Users/Stray-Laptop/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
