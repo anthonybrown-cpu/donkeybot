@@ -8,7 +8,7 @@
 #define FULL_RIGHT 13
 #define CENTER 21
 #define FULL_LEFT 27
-#define STEERING_GAP (FULL_LEFT - FULL_RIGHT)
+#define STEERING_GAP (FULL_RIGHT - FULL_LEFT)
 
 Steering::Steering(uint8_t pin, uint8_t channel){
     this->controlPin = pin;
@@ -20,7 +20,7 @@ Steering::Steering(uint8_t pin, uint8_t channel){
 
 void Steering::set(float value){
     this->steeringValue = value;
-    ledcWrite(this->pwmChannel, FULL_RIGHT + (STEERING_GAP * value));
+    ledcWrite(this->pwmChannel, FULL_LEFT + (STEERING_GAP * value));
 }
 
 float Steering::get(){
