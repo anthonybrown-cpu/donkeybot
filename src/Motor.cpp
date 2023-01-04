@@ -38,3 +38,4 @@ float Motor::getSpeed()
 void Motor::stop(){
     this->setSpeed(0.5);
 }
+
