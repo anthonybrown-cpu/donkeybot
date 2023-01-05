@@ -16,6 +16,7 @@ void setup() {
   }
   Serial.println("LoRa init complete!");
   LoRa.setTxPower(15);
+  LoRa.setSyncWord(0x12);
 
   Serial.println("Init complete!");
 }
@@ -25,7 +26,7 @@ void loop() {
     Serial.println("GOT SERIAL MESSAGE!");
     String message = Serial.readStringUntil('\n');
 
-    sendLoRaMessage(message);
+    //sendLoRaMessage(message);
     Serial.print("Sending LoRa message: ");
     Serial.println(message);
   }
