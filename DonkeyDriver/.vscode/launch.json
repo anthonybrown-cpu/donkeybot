@@ -12,9 +12,9 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "c:/Users/Stray-Laptop/Desktop/DonkeyBot/DonkeyDriver/.pio/build/esp32dev/firmware.elf",
+            "executable": "c:/Users/StrayPyramid/Desktop/DonkeyBot/DonkeyDriver/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/Stray-Laptop/.platformio/packages/toolchain-xtensa32/bin",
+            "toolchainBinDir": "C:/Users/StrayPyramid/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
                 "type": "PlatformIO",
@@ -25,18 +25,18 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "c:/Users/Stray-Laptop/Desktop/DonkeyBot/DonkeyDriver/.pio/build/esp32dev/firmware.elf",
+            "executable": "c:/Users/StrayPyramid/Desktop/DonkeyBot/DonkeyDriver/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/Stray-Laptop/.platformio/packages/toolchain-xtensa32/bin",
+            "toolchainBinDir": "C:/Users/StrayPyramid/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "c:/Users/Stray-Laptop/Desktop/DonkeyBot/DonkeyDriver/.pio/build/esp32dev/firmware.elf",
+            "executable": "c:/Users/StrayPyramid/Desktop/DonkeyBot/DonkeyDriver/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
-            "toolchainBinDir": "C:/Users/Stray-Laptop/.platformio/packages/toolchain-xtensa32/bin",
+            "toolchainBinDir": "C:/Users/StrayPyramid/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"
         }
