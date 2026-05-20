@@ -1,10 +1,10 @@
 # DonkeyBot
 
-LoRa-controlled RC car. Drive it from your phone with a joystick app while wearing FPV goggles.
+LoRa-controlled RC racecar. Drive it from your phone with a joystick app while wearing FPV goggles.
 
 ![The car with electronics mounted](assets/donkeybot.jpg)
 
-The TTGO T-Beam on the car receives steering and throttle commands over LoRa and drives the servo and ESC directly. A second TTGO — mounted on the back of a phone via a 3D printed QuadLock adapter — relays Bluetooth commands from the phone app over LoRa to the car.
+The TTGO T-Beam on the car receives steering and throttle commands over LoRa and drives the steering servo and ESC directly. A second TTGO — mounted on the back of a phone via a 3D printed QuadLock adapter — relays Bluetooth commands from the phone app over LoRa to the car.
 
 ## Architecture
 
@@ -28,7 +28,7 @@ The FPV camera on the car feeds goggles directly — range is limited by the FPV
 | Component | Notes |
 |-----------|-------|
 | TTGO T-Beam V1.1 (×2) | ESP32 + LoRa + GPS + AXP202 power management |
-| RC car | 1/10 scale electric buggy |
+| HL Lightning No.3851 | 1/10 scale RC racecar, 540 class motor, 120A ESC |
 | FPV camera + goggles | Video link for first-person driving |
 | Android phone | Runs BluetoothJoystick |
 | Xbox controller | Used with DonkeyController (laptop setup) |
@@ -61,11 +61,11 @@ The phone-side TTGO (`LoRa-BT-Relay`) acts purely as a wireless bridge: it accep
 
 The controller setup went through a few iterations before landing on BluetoothJoystick:
 
-1. **Laptop + Xbox controller** — `DonkeyController` (Python) reads the controller and sends commands over USB serial to a `LoRa-2-Serial Relay` TTGO plugged into the laptop. Worked fine, but required a laptop.
+1. **Laptop + Xbox controller** *(preferred)* — `DonkeyController` (Python) reads the controller and sends commands over USB serial to a `LoRa-2-Serial Relay` TTGO plugged into the laptop. Wearing the FPV goggles with a proper controller in hand made the car much easier to drive. Required a laptop.
 
 2. **React Native phone app** — `AndroidController_BLE` attempted to move control to a phone. The joystick position and a live value updating every frame caused too many UI hierarchy invalidations; React Native couldn't keep up.
 
-3. **Kotlin phone app** — `BluetoothJoystick` rewrote the controller natively in Kotlin. Native Android views handle the joystick and BLE updates without performance issues. This is the final setup.
+3. **Kotlin phone app** — `BluetoothJoystick` rewrote the controller natively in Kotlin. Native Android views handle the joystick and BLE updates without performance issues. More portable than the laptop setup, but harder to drive with a single finger on a touchscreen joystick.
 
 ## License
 
